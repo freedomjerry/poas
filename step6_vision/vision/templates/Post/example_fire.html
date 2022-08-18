@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>新冠肺炎案例</title>
+		<link rel="stylesheet" href="{% static 'css\style.css' %}" type="text/css" charset="utf-8" />
+		{% for jsfile_name in script_list %}
+		<script src="{{host}}/{{jsfile_name}}.js"></script>
+		{% endfor %}
+		{% for jsfile_name in script_list1 %}
+    	<script src="{{host}}/{{jsfile_name}}.js"></script>
+		{% endfor %}
+		
+	</head>
+	
+	<body>
+		<div id="background">
+			<img src="{% static 'images/absolute-img.jpg' %}" alt="abs-img" class="abs-img" />
+			<div class="page">
+				<div class="sidebar">
+					<div class="featured">
+						<h3>x西昌森林火灾案例</h3>
+						<a href="gallery.html" class="figure"><img src="{% static 'images/西昌火灾.png' %}" alt=""/></a>
+						<a href="gallery.html">preview</a>
+						<span>by <font>徐泽军</font></span>
+						<a href="blog.html" class="comments">12</a>
+					</div>
+					<div id="tweets">
+						
+						
+					</div>
+					<div id="article">
+						<h3>西昌森林火灾</h3>
+						<ul>
+							<li>
+								<p>2020年3月30日15时，四川凉山州西昌市突发森林火灾，火势向泸山景区方向迅速蔓延，大量浓烟顺风飘进西昌城区，西昌市实行紧急交通管制 [1]  。截至3月31日16时，火灾过火面积1000余公顷，毁坏面积为80余公顷 [2]  。3月31日，习近平对四川西昌市经久乡森林火灾作出重要指示，要求坚决遏制事故灾难多发势头，全力保障人民群众生命和财产安全 [3]  。
+									2020年3月31日，该起山火已造成19名地方扑火人员牺牲 [4]  。截至4月1日13时25分，泸山正面明火全部扑灭，取得阶段性成果 [5]  。截至2日12时01分，西昌市经久乡森林火灾明火已全部扑灭 [6]  。
+									2020年4月4日上午，四川西昌市经久乡森林火灾牺牲勇士追悼会在西昌市殡仪馆举行。19位勇士的亲属代表，各级机关干部代表，西昌市、宁南县群众代表参加追悼会。 [7]							
+								</li>
+							
+						</ul>
+					</div>
+					<div id="connect">
+						<h2>Stay Informed:</h2>
+						<a href="#" class="facebook">QQ</a>
+						<a href="#" class="twitter">Wechat</a>
+						<form action="">
+							<input type="text"/>
+							<input type="submit" class="submit" value=""/>
+						</form>
+					</div>
+					<div id="article">
+						<h3>案例结论</h3>
+						<ul>
+							<li>
+								<p>{{conclusion|safe}}</p>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="body">
+					
+					
+					<h1><a href="example_fire.html">西昌森林火灾案例</a></h1>
+					<ul class="navigation">
+						<li><a href="{% url 'Post:index' %}">首页</a></li>
+						<li><a href="{% url 'Post:example_virus' %}">新冠肺炎案例</a></li>
+						<li><a href="{% url 'Post:example_fire' %}">西昌大火案例</a></li>
+						<li><a href="guide.html">成都地震案例</a></li>
+					</ul>
+					<div class="article">
+						<div class="bubble"><span>性别组成</span></div>
+						<div id="news">
+							<div class="first">
+								<h3>{{myechart|safe}}</h3>
+							</div>
+						</div>
+					</div>
+					<div class="article">
+						<div class="bubble"><span>地区分布</span></div>
+						<div id="news">
+							<div class="first">
+								<h3>{{myechart2|safe}}</h3>
+							</div>
+						</div>
+					</div>
+					<div class="article">
+						<div class="bubble"><span>评论态势</span></div>
+						<div id="news">
+							<div class="first">
+								<h3>{{myechart3|safe}}</h3>
+							</div>
+						</div>
+					</div>
+					<div class="article">
+						<div class="bubble"><span>情感态势</span></div>
+						<div id="news">
+							<div class="first">
+								<h3>{{myechart4|safe}}</h3>
+							</div>
+						</div>
+					</div>
+					<div class="article">
+						<div class="bubble"><span>主要评论</span></div>
+						<div id="news">
+							<div class="first">
+								<h3>{{myechart5|safe}}</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

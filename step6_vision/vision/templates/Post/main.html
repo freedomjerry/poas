@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>舆情态势分析</title>
+    <!-- CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="index.html">首页</a>
+          <a class="blog-nav-item" href="#part1">简介</a>
+          <a class="blog-nav-item" href="#part2">案例展示</a>
+          <a class="blog-nav-item" href="#part3">舆情分析</a>
+		  <a class="blog-nav-item" href="#part4">网站资料</a>
+        </nav>
+      </div>
+    </div>
+	<div class="intr">
+      <span class="avtar"></span>
+      <p class="peointr"><font size = 25 COLOR = 'white'>面向城市突发事件的网络舆情态势分析</font></p>
+        <p class="peointr"><marquee scrollamount = 15 onmouseout = this.start() onmouseover = this.stop()>
+		<font size = 5 COLOR = "white"><br>计实验16 徐泽军 16101130125</font>
+    </marquee></p>
+  </div>
+    <div class="title" id="part1">简介</div>
+    <div class="content">
+        <ul class="nav nav-tabs" role="tablist">
+          <li  class="active"><a href="#background" role="tab" data-toggle="tab">项目背景</a></li>
+          <li ><a href="#means" role="tab" data-toggle="tab">项目意义</a></li>
+          <li ><a href="#order" role="tab" data-toggle="tab">项目流程</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="background">   
+            <p class="text">现代各种网络媒体成为了网络舆情产生和传播的主要载体。突发事件往往会造成较大的社会危害，因此一旦发生，必然会引起人们的关注，进而引发网络舆情，城市突发事件与网络舆情之间的关系非常密切。</p>   
+          </div>
+          <div class="tab-pane" id="means">
+          	<p class="text">可以营造一个良好的舆情环境，更有利于社会的稳定和发展。</p>
+            <p class="text">有利于应急工作的开展。</p>
+            <p class="text">对类似突发事件的网络舆情进行跟踪预警。</p>
+          </div>
+          <div class="tab-pane" id ="order">
+            <img src="{% static 'images/order.png' %}" alt="">
+          </div>
+        </div>
+    </div>
+    <div class="title" id="part2">案例展示</div>
+    <div class="content">
+    	<div class="pic pic1">
+    		<A HREF="{% url 'Post:example_virus' %}"><img src="{% static 'images/virus.png' %}" alt=""></A>
+    		<p>新冠肺炎</p>
+    	</div>
+    	<div class="pic pic2">
+    		<A HREF="{% url 'Post:example_fire' %}"><img src="{% static 'images/fire.png' %}" alt=""></A>
+    		<p>西昌森林火灾</p>
+    	</div>
+    	<div class="pic pic3">
+    		<A HREF="{% url 'Post:example_earthquake' %}"><img src="{% static 'images/show_earthquake.jpg' %}" alt=""></A>
+    		<p>成都地震</p>
+    	</div>
+
+    </div>
+    <div class="title" id="part3">舆情分析</div>
+    <div class="content">
+      <form method="post" action="/main/"> 
+      {%csrf_token%}
+    	<div style="width:700px;float: right;margin:100px auto;" >
+        <label for="url" style="font-size:18px" >url：</label>
+        <div style="height:35px;width:400px;position:relative;left:30px;display:inline" >   <!--相关位置--> <!--此处为相关位置与绝对位置联合使用-->
+            <input name="url_user" type="text" style="height:40px;width:350px;padding-right:50px;" value="">
+            <span style="position:absolute;right:25px;top:2px;height:16px;width:16px;display:inline-block;"></span>  <!--绝对位置-->
+        </div>
+        <br/>
+        <br/>
+        <label for="password1" style="font-size:18px" >关键词：</label>
+        <div style="height:35px;width:700px;position:relative;display:inline" >   <!--相关位置--> <!--此处为相关位置与绝对位置联合使用-->
+            <input name="keyword_user" type="text" style="height:40px;width:350px;padding-right:50px;" value="">
+            <span style="position:absolute;right:16px;top:2px;height:16px;width:16px;display:inline-block;"></span>  <!--绝对位置-->
+        </div>
+        <br/>
+        <br/>
+        <div style="width:600px;float: right;">
+            <input type="submit" value="生成结果" style="height:35px;width:200px;background-color:red;"/>
+        </div>
+      </form>
+      <div class="pic pic1">
+    		<A HREF="{% url 'Post:example_sample' %}"><img src="{% static 'images/virus.png' %}" alt=""></A>
+    		<p>分析结果</p>
+    	</div>
+    </div>
+    </div>
+	 <div class="title" id="part4">网站资料</div>
+    <div class="content">
+    	<div class="pic pic3">
+    		<A HREF="https://www.baidu.com/"><img src="{% static 'images/baidu.png' %}" alt=""></A>
+    		<p>百度</p>
+    	</div>
+    	<div class="pic pic3">
+    		<A HREF="https://www.csdn.net/"><img src="{% static 'images/csdn.png' %}" alt=""></A>
+    		<p>csdn</p>
+      </div>
+      <div class="pic pic3">
+    		<A HREF="https://www.weibo.cn/"><img src="{% static 'images/weibo.png' %}" alt=""></A>
+    		<p>微博.cn</p>
+    	</div>
+    	
+    </div>
+    <div class="blog-footer">
+      <p>by<A HREF="geren.html">徐泽军</A></a>.</p>
+<div class="htmleaf-content">
+<canvas id="clock2_" width="200px" height="200px">
+		</canvas></div>
+		<script type="text/javascript" src="{% static 'js/canvas_clock.js' %}"></script>
+	<script type="text/javascript">
+	clockd2_={
+			  "indicate": true,
+			  "dial1_color": "#666600",
+			  "time_24h": true,
+			  "timeoffset":0,
+			  "date_add":3,
+			  "date_add_color": "#999",
+			 };
+			 var c = document.getElementById('clock2_');
+	  cns2_ = c.getContext('2d');
+	  clock_digital(200,cns2_,clockd2_);
+	  </script>
+	<div style="text-align:center;">
+    </div>
+    </div>
+    <a href="" class="btt">顶部</a>
+    <!-- Js-->
+    <script src="{% static 'js/jquery-1.9.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/plugin.js' %}"></script>
+  </body>
+</html>

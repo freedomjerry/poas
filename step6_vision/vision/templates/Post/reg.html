@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>舆情态势分析</title>
+    <!-- CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="login">登录</a>
+          <a class="blog-nav-item" href="regist">注册</a>
+          <a class="blog-nav-item" href="#part2">退出</a>
+        </nav>
+      </div>
+    </div>
+    <div class="title" id="logging">面向城市突发事件的网络舆情态势分析</div>
+    <div class="content">
+      <form method="post" action="/main/"> 
+	  {%csrf_token%}
+	  	<label for="password1" style="font-size:36px;text-algin:center"  >面向城市突发事件的网络舆情态势分析</label>
+    	<div style="width:700px;float: right;margin:100px auto;" >
+        <label for="url" style="font-size:18px" >用户名：</label>
+        <div style="height:35px;width:400px;position:relative;left:30px;display:inline" >   <!--相关位置--> <!--此处为相关位置与绝对位置联合使用-->
+            <input name="url_user" type="text" style="height:40px;width:350px;padding-right:50px;" value="">
+            <span style="position:absolute;right:25px;top:2px;height:16px;width:16px;display:inline-block;"></span>  <!--绝对位置-->
+        </div>
+        <br/>
+        <br/>
+        <label for="password1" style="font-size:18px" >密码:</label>
+        <div style="height:35px;width:700px;position:relative;left:60px;display:inline" >   <!--相关位置--> <!--此处为相关位置与绝对位置联合使用-->
+            <input name="keyword_user" type="text" style="height:40px;width:350px;padding-right:50px;" value="">
+            <span style="position:absolute;right:16px;top:2px;height:16px;width:16px;display:inline-block;"></span>  <!--绝对位置-->
+        </div>
+        <br/>
+        <br/>
+        <div style="width:600px;float: right;">
+			<input type="submit" value="登录" style="height:35px;width:200px;background-color:red;"/>
+			<input type="button" value="注册" style="height:35px;width:200px;background-color:red;" href="reg.html"/>
+		</div>
+    	</div>
+    <div class="blog-footer">
+      <p>by徐泽军</A></a>.</p>
+		<div class="htmleaf-content">
+		<canvas id="clock2_" width="200px" height="200px">
+		</canvas></div>
+		<script type="text/javascript" src="{% static 'js/canvas_clock.js' %}"></script>
+	<script type="text/javascript">
+	clockd2_={
+			  "indicate": true,
+			  "dial1_color": "#666600",
+			  "time_24h": true,
+			  "timeoffset":0,
+			  "date_add":3,
+			  "date_add_color": "#999",
+			 };
+			 var c = document.getElementById('clock2_');
+	  cns2_ = c.getContext('2d');
+	  clock_digital(200,cns2_,clockd2_);
+	  </script>
+	<div style="text-align:center;">
+    </div>
+    </div>
+    <a href="" class="btt">顶部</a>
+    <!-- Js-->
+    <script src="{% static 'js/jquery-1.9.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/plugin.js' %}"></script>
+  </body>
+</html>

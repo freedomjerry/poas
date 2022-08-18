@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>樱之家</title>
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+
+<bgsound src="music/宫崎骏 - 飘落的樱花 - 纯音乐版.mp3" loop="1">
+  </head>
+  <body>
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="index.html">首页</a>
+          <a class="blog-nav-item" href="#part1">樱之美</a>
+          <a class="blog-nav-item" href="#part2">樱之蕴</a>
+          <a class="blog-nav-item" href="#part3">樱之话</a>
+		  <a class="blog-nav-item" href="#part4">网站资料</a>
+		  <a class="blog-nav-item" href="geren.html">作者</a>
+        </nav>
+      </div>
+    </div>
+	<div class="intr">
+    	<span class="avtar"></span>
+        <p class="peointr"><marquee scrollamount = 15 onmouseout = this.start() onmouseover = this.stop()><font size = 5 COLOR = "white"><br>近代史人邓溥雅有这样一首诗“昨日雪如花。今日花如雪。山樱如美人，红颜易消歇”</font>
+</marquee></p>
+        <p class="peointr">樱花是我最喜欢的花</p>
+		<p class="peointr">在这里我将带大家进入樱花的世界</p>
+    </div>
+    <div class="title" id="part1">樱之美</div>
+    <div class="content">
+    	<div class="pic pic1">
+    		<A HREF="wuda.html"><img src="images/h1.png" alt=""></A>
+    		<p>武大樱花</p>
+    	</div>
+    	<div class="pic pic2">
+    		<A HREF="jiye.html"><img src="images/h2.jpg" alt=""></A>
+    		<p>日本奈良县吉野山“千本樱”</p>
+    	</div>
+    	<div class="pic pic3">
+    		<A HREF="heimuchuan.html"><img src="images/h3.jpg" alt=""></A>
+    		<p>东京目黑川</p>
+    	</div>
+
+    </div>
+    <div class="title" id="part2">樱之蕴</div>
+    <div class="content">
+    	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <A HREF="sd.html"><img src="images/s1.jpg" alt="..."></A>
+                </div>
+                <div class="item">
+                  <A HREF="index.html"><img src="images/6.jpg" alt="..."></A>
+                </div>
+				<div class="item">
+                 <A HREF="zl.html"> <img src="images/s4.gif" alt="..."></A>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+    </div>
+	<div class="title" id="part3">樱之话</div>
+    <div class="content">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active"><a href="#home" role="tab" data-toggle="tab">樱花的简介</a></li>
+          <li><a href="#profile" role="tab" data-toggle="tab">国花&传说</a></li>
+          <li><a href="#messages" role="tab" data-toggle="tab">花语</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="home">
+          	  	<p class="text">樱花（学名：Cerasus sp.）：是蔷薇科樱属几种植物的统称，樱花是乔木，高4-16米，树皮灰色。小枝淡紫褐色，无毛，嫩枝绿色，被疏柔毛。冬芽卵圆形，无毛。叶片椭圆卵形或倒卵形，长5-12厘米，宽2.5-7厘米，先端渐尖或骤尾尖，基部圆形，稀楔形，边有尖锐重锯齿，齿端渐尖，有小腺体，上面深绿色，无毛，下面淡绿色，沿脉被稀疏柔毛，有侧脉7-10对；叶柄长1.3-1.5厘米，密被柔毛，顶端有1-2个腺体或有时无腺体；托叶披针形，有羽裂腺齿，被柔毛，早落。</p>
+            <p class="text">在《中国植物志》新修订的名称中专指“东京樱花”，亦称“日本樱花”。樱花品种相当繁多，数目超过三百种以上，全世界共有野生樱花约150种，中国有50多种。全世界约40种樱花类植物野生种祖先中，原产于中国的有33种。其他的则是通过园艺杂交所衍生得到的品种。
+樱花原产北半球温带环喜马拉雅山地区，在世界各地都有生长，主要在日本生长。花每枝3到5朵，成伞状花序，花瓣先端缺刻，花色多为白色、粉红色。花常于3月与叶同放或叶后开花，随季节变化，樱花花色幽香艳丽，常用于园林观赏。樱花可分单瓣和复瓣两类，单瓣类能开花结果，复瓣类多半不结果。</p>
+<p class="text">据文献资料考证，两千多年前的秦汉时期，樱花已在中国宫苑内栽培。唐朝时樱花已普遍出现在私家庭院。但是当时的樱花不同于日本现在的樱花。</p>
+          </div>
+          <div class="tab-pane" id="profile">
+          	<p class="text">樱花是爱情与希望的象征，日本的代表物之一。在日本，相传在很久以前，日本有位名叫“木花开耶姬”（意为樱花）的仙女。</p>
+            <p class="text">有一年11月，仙女从冲绳出发，途经九州、关西、关东等地，在第二年5月到达北海道。沿途，她将一种象征爱情与希望的花朵撒遍每一个角落。</p>
+            <p class="text">为了纪念这位仙女，当地人将这种花命名为“樱花”，日本也因此成为“樱花之国”。</p>
+			<p class="text">在遥远的东瀛，流传着这样一个故事，美丽的樱花树下，有着许许多多属于那些武士道的灵魂。</p>
+			<p class="text">传说樱花本来只有白色，而那些壮志未酬的武士选择在他们喜爱的樱花树下了结自己的生命，鲜红的血缓缓的渗进泥土里，把樱花的花瓣渐渐染成了红色，樱花的花瓣越红，说明树下的亡魂就越多。就越体现了“日本的精神”。</p>
+          </div>
+          <div class="tab-pane" id="messages">
+        
+<p class="text">樱花是爱情与希望的象征，代表着高雅，质朴纯洁的爱情。</p>
+            <p class="text">樱花宛如懵懂少女的，安静得在春天开放，满树的白色粉色的樱花，是对情人诉说爱情的最美语言。</p>
+            <p class="text">心中的某个人，就如那场寂寞的樱花雨，缓缓消失在时光的深处，留下永恒的记忆。</p>
+            <p class="text">樱花的花语：<BR>
+
+生命、幸福一生一世永不放弃，命运的法则就是循环 纯洁<BR>
+樱花花语:生命 <BR>
+樱花热烈、纯洁、高尚<BR>
+冬樱花的花语就是-东方的神秘 <BR>
+樱花花语:命运的法则就是循环 <BR>
+樱花的花语：幸福 <BR>
+重瓣樱花花语：文静 <BR>
+西洋樱花的花语是“善良的教育”。<BR> 
+樱花草:青春 <BR>
+山樱花(纯洁/高尚/淡薄) <BR>
+樱花 花语:精神之美</p>
+          </div>
+        </div>
+    </div>
+	 <div class="title" id="part4">网站资料</div>
+    <div class="content">
+    	<div class="pic pic3">
+    		<A HREF="https://www.baidu.com/"><img src="images/t01d5d9d0e64e539bf2.png" alt=""></A>
+    		<p>百度</p>
+    	</div>
+    	<div class="pic pic3">
+    		<A HREF="https://www.sogou.com/"><img src="images/19b54c1387d758917de76a285ab43c0e.jpg" alt=""></A>
+    		<p>搜狗</p>
+    	</div>
+    	
+    </div>
+    <div class="blog-footer">
+      <p>by<A HREF="geren.html">徐泽军</A></a>.</p>
+<div class="htmleaf-content">
+<canvas id="clock2_" width="200px" height="200px">
+		</canvas></div>
+		<script type="text/javascript" src="js/canvas_clock.js"></script>
+	<script type="text/javascript">
+	clockd2_={
+			  "indicate": true,
+			  "dial1_color": "#666600",
+			  "time_24h": true,
+			  "timeoffset":0,
+			  "date_add":3,
+			  "date_add_color": "#999",
+			 };
+			 var c = document.getElementById('clock2_');
+	  cns2_ = c.getContext('2d');
+	  clock_digital(200,cns2_,clockd2_);
+	  </script>
+	<div style="text-align:center;">
+    </div>
+    </div>
+    <a href="" class="btt">顶部</a>
+    <!-- Js-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugin.js"></script>
+  </body>
+</html>
